@@ -308,7 +308,7 @@ h1 sub
         }
     });
 
-    d3.select("#episode").text(romanize(Math.round(Math.random() * 100)));
+    d3.select("#episode").text(romanize(Math.floor(Math.random() * 100) + 1));
     d3.select("#subtitle").text(subtitles[Math.floor(Math.random() * subtitles.length)]);
 
     d3.select("#team1").text(team1[0] + " & " + team1[1]);
