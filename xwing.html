@@ -39,10 +39,10 @@ p.start
 p.start.s1
 {
     -webkit-animation: intro 1s ease-out 1s;
-    -moz-animation: intro 1s ease-out 1s;
-    -ms-animation: intro 1s ease-out 1s;
-    -o-animation: intro 1s ease-out 1s;
-    animation: intro 1s ease-out 1s;
+    -moz-animation: intro 1s ease-out;
+    -ms-animation: intro 1s ease-out;
+    -o-animation: intro 1s ease-out;
+    animation: intro 1s ease-out;
 
 }
 
@@ -269,7 +269,7 @@ h1 sub
         </div>
     </div>
 
-<audio src="theme.ogg" volume="1.0" preload="auto" onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 4250)"></audio>
+<audio src="static/theme.ogg" volume="1.0" preload="auto" onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 4250)"></audio>
 
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script>
@@ -308,7 +308,7 @@ h1 sub
         }
     });
 
-    d3.select("#episode").text(romanize(Math.floor(Math.random() * 100) + 1));
+    d3.select("#episode").text(romanize(Math.round(Math.random() * 100)));
     d3.select("#subtitle").text(subtitles[Math.floor(Math.random() * subtitles.length)]);
 
     d3.select("#team1").text(team1[0] + " & " + team1[1]);
