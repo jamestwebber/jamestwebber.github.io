@@ -20,92 +20,9 @@
     
   <div class="blog-post">
   
-    <h2><a href="../blog/preview/">Coming Soon (maybe)</a></h2>
-  
-  <p class="meta"><small>2016-04-13</small></p>
-  <p>I made this blog because some stuff doesn't fit in a tweet, so I should probably write something, huh? Here are the main things I want to write, eventually:</p>
-<div class="list-container"><ul>
-<li>Something about publishing</li>
-<li>Something about graduate education</li>
-<li>Something about the research enterprise in general</li>
-<li>(Maybe) something about statistics</li>
-</ul></div>
-<p>If I ever write these posts, I'll update this one to reflect that.</p>
-
-  </div>
-
-  
-    
-  <div class="blog-post">
-  
-    <h2><a href="../blog/glasseye-2/">Glasseye Upgrades</a></h2>
-  
-  <p class="meta"><small>2016-04-07</small></p>
-  <p>I fixed the way that Glasseye handles sidenotes and margin notes, so that they auto-hide (with a pop-up link) when the screen is too narrow to accomodate them. Job well done.</p>
-<p>At this point my "Glasseye" implementation is not really similar to the original code, so I've created a <a href="https://github.com/jamestwebber/blagotube">GitHub project</a> for this site. In case you wanted to see how the magic happens.</p>
-<p>I imagine that at some point I may even break that plugin out into yet another repository, because there are still some tweaks I want to make…we shall see.</p>
-
-  </div>
-
-  
-    
-  <div class="blog-post">
-  
-    <h2><a href="../blog/glasseye/">Introducing Glasseye, sort of</a></h2>
-  
-  <p class="meta"><small>2016-04-06</small></p>
-  <p>I like how this looks but I wanted more functionality—particularly the sidenotes from Tufte CSS.<label class="margin-toggle sidenote-number" for="sn-0"></label><input class="margin-toggle" id="sn-0" type="checkbox"/><span class="sidenote">Look! A sidenote! <br><br>And yes, this is still a blog about making a blog. I'll get to other topics eventually.</br></br></span></p>
-<p>Looking around for options, I stumbled on <a href="http://coppeliamla.github.io/glasseye/glasseye_markdownExample/demo.html">Glasseye</a>, by <a href="http://www.coppelia.io/author/simonraper/">Simon Raper</a>, which looks really nice. He's combining Markdown, Tufte CSS, and <a href="https://www.d3js.org">d3.js</a> in one package! Those are three things I like! And it's in Python!</p>
-<p>After digging into it, I ended up with a fairly stripped-down version of his code, to the extent that I just stuck it straight into a Lektor plugin rather than using the Glasseye package itself<label class="margin-toggle sidenote-number" for="sn-1"></label><input class="margin-toggle" id="sn-1" type="checkbox"/><span class="sidenote">That reminds me, I really need to put the <em>actual code</em> for this site up on Github…</span>. For now I have jettisoned all of his (very nice) d3 charts, because I'm instinctively against the idea of letting <em>the Man</em> design my plots for me. I can make my own d3 charts, thank you very much.<label class="margin-toggle sidenote-number" for="sn-2"></label><input class="margin-toggle" id="sn-2" type="checkbox"/><span class="sidenote">But they do look pretty snazzy.</span> I just noticed that the sidenotes don't turn into pop-ups when the screen gets small, which is how they're supposed to work. I should fix that.<label class="margin-toggle sidenote-number" for="sn-3"></label><input class="margin-toggle" id="sn-3" type="checkbox"/><span class="sidenote">Update: I did!</span></p>
-<p>On Monday I visited with <a href="https://twitter.com/lteytelman">Lenny Teytelman</a><label class="margin-toggle sidenote-number" for="sn-4"></label><input class="margin-toggle" id="sn-4" type="checkbox"/><span class="sidenote">I interact with him mostly through Twitter so I might as well link to that.</span> of <a href="https://www.protocols.io">Protocols.io</a>, and we talked about a variety of stuff including the intersection of open-access science publishing and startups. One of the reasons I made this blog was so I could stick those ideas somewhere…maybe that'll be the next post.</p>
-<p>Or maybe I'll change the font sizes and write about that. <label class="margin-toggle" for="mn-0">⊕</label><input class="margin-toggle" id="mn-0" type="checkbox"/><span class="marginnote">And I know I'm going crazy with the sidenotes, they're fun.</span></p>
-
-  </div>
-
-  
-    
-  <div class="blog-post">
-  
-    <h2><a href="../blog/tufte/">That was easy</a></h2>
-  
-  <p class="meta"><small>2016-03-21</small></p>
-  <h3 id="redecorating">Redecorating</h3>
-<p>The default style was kind of ugly so I decided to spruce it up with <a href="www.daveliepmann.com/tufte-css/">Tufte CSS</a> which is exactly what it sounds like.</p>
-<h3 id="a-step-by-step-account">A step-by-step account:</h3>
-<div class="list-container"><ol style="list-style-type: decimal">
-<li>First I downloaded the CSS file and fonts from <a href="https://github.com/edwardtufte/tufte-css">their GitHub page</a> and added them to this project.</li>
-<li>Then I changed the <code>layout.html</code> file to point to it.</li>
-<li>That was it! Looks pretty nice without any modifications whatsoever. I may tweak it a little bit later.</li>
-</ol></div>
-<p>I just retroactively <em>lied</em> and changed the date on this post, solely so that it would show up in the right order on the blog page. Sue me.</p>
-<p>I'm not super happy with how it looks right now anyway—I may decide to get rid of the entire page. Or I just need to write longer blog posts. Luckily no one will ever read this.</p>
-
-  </div>
-
-  
-    
-  <div class="blog-post">
-  
-    <h2><a href="../blog/first-post/">Okay I guess I have a blog now</a></h2>
-  
-  <p class="meta"><small>2016-03-20</small></p>
-  <p>I've finally caved in to my own egomania and decided that everyone needs to listen to me!</p>
-<p>Initial thoughts on <a href="http://www.getlektor.com">Lektor</a>:</p>
-<div class="list-container"><ul>
-<li>Pretty easy to set up something that works, and I like that it can deploy to GitHub pages automatically.</li>
-<li>Not as flexible as I would hope—in fact not very flexible at all. Maybe I will discover more flexibility later.</li>
-<li>It seems like I pretty much have to nuke my previous page to deploy this but that's what git is for, right? Let's see how it goes.</li>
-</ul></div>
-
-  </div>
-
-  
-    
-  <div class="blog-post">
-  
     <h2><a href="../blog/team-science/">Go Team Science! (Or not)</a></h2>
   
-  <p class="meta"><small></small></p>
+  <p class="meta"><small>2016-06-01</small></p>
   <p>I don't seem to have a handle on this blogging thing, yet. I have a long and rambling draft for a post about publishing, which has been languishing for months now. Meanwhile the <a href="www.nigms.nih.gov">NIGMS</a> just released a <a href="https://grants.nih.gov/grants/guide/notice-files/NOT-GM-16-104.html">Request-For-Information</a> on "Team Science". That seems as good an excuse as any to write something here. They even provided me with a nice outline, and an introduction:</p>
 <blockquote>
 <p>The National Institute of General Medical Sciences (NIGMS) seeks input on team-based scientific research and the manner in which this activity could be supported by the Institute. This Request for Information (RFI) will assist NIGMS in considering needs and opportunities in team science at the multi-investigator, institutional, regional and national level. Comments are invited from any interested party.</p>
@@ -165,6 +82,69 @@
     
   <div class="blog-post">
   
+    <h2><a href="../blog/preview/">Coming Soon (maybe)</a></h2>
+  
+  <p class="meta"><small>2016-04-13</small></p>
+  <p>I made this blog because some stuff doesn't fit in a tweet, so I should probably write something, huh? Here are the main things I want to write, eventually:</p>
+<div class="list-container"><ul>
+<li>Something about publishing</li>
+<li>Something about graduate education</li>
+<li>Something about the research enterprise in general</li>
+<li>(Maybe) something about statistics</li>
+</ul></div>
+<p>If I ever write these posts, I'll update this one to reflect that.</p>
+
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
+    <h2><a href="../blog/glasseye-2/">Glasseye Upgrades</a></h2>
+  
+  <p class="meta"><small>2016-04-07</small></p>
+  <p>I fixed the way that Glasseye handles sidenotes and margin notes, so that they auto-hide (with a pop-up link) when the screen is too narrow to accomodate them. Job well done.</p>
+<p>At this point my "Glasseye" implementation is not really similar to the original code, so I've created a <a href="https://github.com/jamestwebber/blagotube">GitHub project</a> for this site. In case you wanted to see how the magic happens.</p>
+<p>I imagine that at some point I may even break that plugin out into yet another repository, because there are still some tweaks I want to make…we shall see.</p>
+
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
+    <h2><a href="../blog/glasseye/">Introducing Glasseye, sort of</a></h2>
+  
+  <p class="meta"><small>2016-04-06</small></p>
+  <p>I like how this looks but I wanted more functionality—particularly the sidenotes from Tufte CSS.<label class="margin-toggle sidenote-number" for="sn-0"></label><input class="margin-toggle" id="sn-0" type="checkbox"/><span class="sidenote">Look! A sidenote! <br><br>And yes, this is still a blog about making a blog. I'll get to other topics eventually.</br></br></span></p>
+<p>Looking around for options, I stumbled on <a href="http://coppeliamla.github.io/glasseye/glasseye_markdownExample/demo.html">Glasseye</a>, by <a href="http://www.coppelia.io/author/simonraper/">Simon Raper</a>, which looks really nice. He's combining Markdown, Tufte CSS, and <a href="https://www.d3js.org">d3.js</a> in one package! Those are three things I like! And it's in Python!</p>
+<p>After digging into it, I ended up with a fairly stripped-down version of his code, to the extent that I just stuck it straight into a Lektor plugin rather than using the Glasseye package itself<label class="margin-toggle sidenote-number" for="sn-1"></label><input class="margin-toggle" id="sn-1" type="checkbox"/><span class="sidenote">That reminds me, I really need to put the <em>actual code</em> for this site up on Github…</span>. For now I have jettisoned all of his (very nice) d3 charts, because I'm instinctively against the idea of letting <em>the Man</em> design my plots for me. I can make my own d3 charts, thank you very much.<label class="margin-toggle sidenote-number" for="sn-2"></label><input class="margin-toggle" id="sn-2" type="checkbox"/><span class="sidenote">But they do look pretty snazzy.</span> I just noticed that the sidenotes don't turn into pop-ups when the screen gets small, which is how they're supposed to work. I should fix that.<label class="margin-toggle sidenote-number" for="sn-3"></label><input class="margin-toggle" id="sn-3" type="checkbox"/><span class="sidenote">Update: I did!</span></p>
+<p>On Monday I visited with <a href="https://twitter.com/lteytelman">Lenny Teytelman</a><label class="margin-toggle sidenote-number" for="sn-4"></label><input class="margin-toggle" id="sn-4" type="checkbox"/><span class="sidenote">I interact with him mostly through Twitter so I might as well link to that.</span> of <a href="https://www.protocols.io">Protocols.io</a>, and we talked about a variety of stuff including the intersection of open-access science publishing and startups. One of the reasons I made this blog was so I could stick those ideas somewhere…maybe that'll be the next post.</p>
+<p>Or maybe I'll change the font sizes and write about that. <label class="margin-toggle" for="mn-0">⊕</label><input class="margin-toggle" id="mn-0" type="checkbox"/><span class="marginnote">And I know I'm going crazy with the sidenotes, they're fun.</span></p>
+
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
+    <h2><a href="../blog/first-post/">Okay I guess I have a blog now</a></h2>
+  
+  <p class="meta"><small>2016-03-20</small></p>
+  <p>I've finally caved in to my own egomania and decided that everyone needs to listen to me!</p>
+<p>Initial thoughts on <a href="http://www.getlektor.com">Lektor</a>:</p>
+<div class="list-container"><ul>
+<li>Pretty easy to set up something that works, and I like that it can deploy to GitHub pages automatically.</li>
+<li>Not as flexible as I would hope—in fact not very flexible at all. Maybe I will discover more flexibility later.</li>
+<li>It seems like I pretty much have to nuke my previous page to deploy this but that's what git is for, right? Let's see how it goes.</li>
+</ul></div>
+
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
     <h2><a href="../blog/publishing/">Journals! What Are They Good For?</a></h2>
   
   <p class="meta"><small></small></p>
@@ -205,6 +185,26 @@
 <li>Public notebooks prevent p-hacking and all kinds of other shady practices. It also provides an honest account of the <em>progression</em> of the research, instead of the Newspeak-like "we have always been working on protein X" narrative of a paper.</li>
 </ul></div>
 <p><label class="margin-toggle" for="mn-2">⊕</label><input class="margin-toggle" id="mn-2" type="checkbox"/><span class="marginnote">To be clear, I realize that the paper lab notebook isn't going away. It's just too useful, and paper tends to last longer than bits despite our best efforts. We still need a way to share our progress as it happens.</span></p>
+
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
+    <h2><a href="../blog/tufte/">That was easy</a></h2>
+  
+  <p class="meta"><small>2016-03-21</small></p>
+  <h3 id="redecorating">Redecorating</h3>
+<p>The default style was kind of ugly so I decided to spruce it up with <a href="www.daveliepmann.com/tufte-css/">Tufte CSS</a> which is exactly what it sounds like.</p>
+<h3 id="a-step-by-step-account">A step-by-step account:</h3>
+<div class="list-container"><ol style="list-style-type: decimal">
+<li>First I downloaded the CSS file and fonts from <a href="https://github.com/edwardtufte/tufte-css">their GitHub page</a> and added them to this project.</li>
+<li>Then I changed the <code>layout.html</code> file to point to it.</li>
+<li>That was it! Looks pretty nice without any modifications whatsoever. I may tweak it a little bit later.</li>
+</ol></div>
+<p>I just retroactively <em>lied</em> and changed the date on this post, solely so that it would show up in the right order on the blog page. Sue me.</p>
+<p>I'm not super happy with how it looks right now anyway—I may decide to get rid of the entire page. Or I just need to write longer blog posts. Luckily no one will ever read this.</p>
 
   </div>
 
