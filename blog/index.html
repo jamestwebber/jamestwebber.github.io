@@ -11,6 +11,8 @@
     <nav>
       <ul class="nav navbar-nav">
         
+          <li><a href="../CV/">CV</a></li>
+        
           <li class="active"><a href="../blog/">Blog</a></li>
         
         <li><a href="../">About</a></li>
@@ -18,6 +20,25 @@
     </nav>
   </header>
   <div class="page">
+    
+  
+    
+      
+  <div class="blog-post">
+  
+    <h2><a href="../blog/the-best-card/">Behold: the QR card</a></h2>
+  
+  <p class="meta"><small>2017-01-22</small></p>
+  <section><p>I'm inordinately pleased with this<label class="margin-toggle sidenote-number" for="sn-0"></label><input class="margin-toggle" id="sn-0" type="checkbox"/><span class="sidenote">That's me, in case you can't tell</span>.</p>
+<p><image height="200" src="/static/qrcard.png"></image></p>
+<h2 id="how-it-works">How it works</h2>
+<p>It turns out that getting an arbitrary image into a QR code is annoying difficult. Or at least it took me quite a while to do it—partially due to inertia, as it took the concentrated boredom of a trip home for the holidays to get me focused enough to crack it. In the end, the code is fairly simple.</p>
+<p>In short, I had to <a href="https://github.com/lincolnloop/python-qrcode">reverse-engineer a QR code library</a>, figure out where the data was stored, put in the data I wanted, and then calculate the corresponding error correction code so that the thing would scan properly.</p>
+<h2 id="in-more-detail">In more detail</h2>
+<p>Watch this space—I need to clean up the code and then I'll make a GitHub repo for it to live in.</p>
+</section>
+  </div>
+
     
   
     
@@ -205,28 +226,6 @@ sW &amp; se &amp; sb &amp; sb &amp; se &amp; sr
   
     
   
-    
-      
-  <div class="blog-post">
-  
-    <h2><a href="../blog/tufte/">That was easy</a></h2>
-  
-  <p class="meta"><small>2016-03-21</small></p>
-  <section><h3 id="redecorating">Redecorating</h3>
-<p>The default style was kind of ugly so I decided to spruce it up with <a href="www.daveliepmann.com/tufte-css/">Tufte CSS</a> which is exactly what it sounds like.</p>
-<h3 id="a-step-by-step-account">A step-by-step account:</h3>
-<div class="list-container"><ol style="list-style-type: decimal">
-<li>First I downloaded the CSS file and fonts from <a href="https://github.com/edwardtufte/tufte-css">their GitHub page</a> and added them to this project.</li>
-<li>Then I changed the <code>layout.html</code> file to point to it.</li>
-<li>That was it! Looks pretty nice without any modifications whatsoever. I may tweak it a little bit later.</li>
-</ol></div>
-<p>I just retroactively <em>lied</em> and changed the date on this post, solely so that it would show up in the right order on the blog page. Sue me.</p>
-<p>I'm not super happy with how it looks right now anyway—I may decide to get rid of the entire page. Or I just need to write longer blog posts. Luckily no one will ever read this.</p>
-</section>
-  </div>
-
-    
-  
 
   
   <div class="pagination">
@@ -235,7 +234,7 @@ sW &amp; se &amp; sb &amp; sb &amp; se &amp; sr
     
     | 1 |
     
-      <span class="disabled">Next &raquo;</span>
+      <a href="../blog/page/2/">Next &raquo;</a>
     
   </div>
 

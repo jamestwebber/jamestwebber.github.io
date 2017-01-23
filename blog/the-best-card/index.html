@@ -1,0 +1,53 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../static/tufte.css">
+    <title>Behold: the QR card - NP-Complete Breakfast</title>
+    <meta name="google-site-verification" content="9lGZ6-UPsP8zQZOJKMNRxS-rSIE6OtRvjFeOLW7Z_jk" />
+</head>
+<body>
+  <header>
+    <h4>NP-Complete Breakfast</h4>
+    <nav>
+      <ul class="nav navbar-nav">
+        
+          <li><a href="../../CV/">CV</a></li>
+        
+          <li class="active"><a href="../../blog/">Blog</a></li>
+        
+        <li><a href="../../">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="page">
+    
+  
+  <div class="blog-post">
+  
+    <h2>Behold: the QR card</h2>
+  
+  <p class="meta"><small>2017-01-22</small></p>
+  <section><p>I'm inordinately pleased with this<label class="margin-toggle sidenote-number" for="sn-0"></label><input class="margin-toggle" id="sn-0" type="checkbox"/><span class="sidenote">That's me, in case you can't tell</span>.</p>
+<p><image height="200" src="/static/qrcard.png"></image></p>
+<h2 id="how-it-works">How it works</h2>
+<p>It turns out that getting an arbitrary image into a QR code is annoying difficult. Or at least it took me quite a while to do it—partially due to inertia, as it took the concentrated boredom of a trip home for the holidays to get me focused enough to crack it. In the end, the code is fairly simple.</p>
+<p>In short, I had to <a href="https://github.com/lincolnloop/python-qrcode">reverse-engineer a QR code library</a>, figure out where the data was stored, put in the data I wanted, and then calculate the corresponding error correction code so that the thing would scan properly.</p>
+<h2 id="in-more-detail">In more detail</h2>
+<p>Watch this space—I need to clean up the code and then I'll make a GitHub repo for it to live in.</p>
+</section>
+  </div>
+
+
+  </div>
+  <footer>
+    &copy; Copyright 2016 by James Webber.
+  </footer>
+<script type="text/javascript">
+(function () {
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+  document.getElementsByTagName("head")[0].appendChild(script);
+})();
+</script>
+</body>
