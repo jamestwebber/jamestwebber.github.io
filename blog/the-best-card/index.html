@@ -27,14 +27,14 @@
     <h2>Behold: the QR card</h2>
   
   <p class="meta"><small>2017-01-22</small></p>
-  <section><p>I'm inordinately pleased with this<label class="margin-toggle sidenote-number" for="sn-0"></label><input class="margin-toggle" id="sn-0" type="checkbox"/><span class="sidenote">That's me, in case you can't tell</span>.</p>
-<p><image height="200" src="/static/qrcard.png"></image></p>
+  <section><p>I’m inordinately pleased with this<label class="margin-toggle sidenote-number" for="sn-0"></label><input class="margin-toggle" id="sn-0" type="checkbox"/><span class="sidenote">That’s me, in case you can’t tell</span>.</p>
+<p><image height="200" src="/static/qrcard.png"/></p>
 <h2 id="how-it-works">How it works</h2>
 <p>It turns out that getting an arbitrary image into a QR code is annoyingly difficult. Or at least it took me quite a while to do it—partially due to inertia, as it required the concentrated boredom of a trip home for the holidays to get me focused enough to crack it. In the end, the code is fairly simple.</p>
 <p>In short, I had to <a href="https://github.com/lincolnloop/python-qrcode">reverse-engineer a QR code library</a>, figure out where the data was stored, put in the data I wanted, and then calculate the corresponding error correction code so that the thing would scan properly.</p>
 <h2 id="in-more-detail">In more detail</h2>
-<p>The whole thing fits in a <a href="https://gist.github.com/jamestwebber/b6dcafdfa35d5c4784fa3b4fc130b03c">GitHub Gist</a>, if you don't include the required <a href="https://github.com/lincolnloop/python-qrcode">python-qrcode</a> library. The workflow is fairly simple:</p>
-<div class="list-container"><ol style="list-style-type: decimal">
+<p>The whole thing fits in a <a href="https://gist.github.com/jamestwebber/b6dcafdfa35d5c4784fa3b4fc130b03c">GitHub Gist</a>, if you don’t include the required <a href="https://github.com/lincolnloop/python-qrcode">python-qrcode</a> library. The workflow is fairly simple:</p>
+<div class="list-container"><ol type="1">
 <li>Get the layout of the QR code<label class="margin-toggle sidenote-number" for="sn-1"></label><input class="margin-toggle" id="sn-1" type="checkbox"/><span class="sidenote">This took the longest to figure out. The simplest way was to create a blank code.</span></li>
 <li>Load an image and extract the data from it, using the coordinates from 1.</li>
 <li>For each of the bit masks:
