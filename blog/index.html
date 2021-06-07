@@ -13,7 +13,7 @@
         
           <li><a href="../CV/">CV</a></li>
         
-          <li class="active"><a href="../blog/">Blog</a></li>
+          <li class="active"><a href="./">Blog</a></li>
         
         <li><a href="../">About</a></li>
       </ul>
@@ -26,7 +26,7 @@
       
   <div class="blog-post">
   
-    <h2><a href="../blog/fixing-carbon/">A Modest Proposal To Save the World</a></h2>
+    <h2><a href="fixing-carbon/">A Modest Proposal To Save the World</a></h2>
   
   <p class="meta"><small>2018-12-07</small></p>
   <section><p><strong>Warning</strong>: what follows are the hare-brained ideas of a mad<label class="margin-toggle sidenote-number" for="sn-0"></label><input class="margin-toggle" id="sn-0" type="checkbox"/><span class="sidenote">Or at least fairly irate.</span> scientist. Before undertaking any dangerous, untested geo-engineering project that has the potential to destroy life as we know it, you should consult with your physician, physicist, psychic, and/or psychiatrist.</p>
@@ -62,7 +62,7 @@ Prochlorococcus      3,000,000,000,000,000,000,000,000,000 (!)</code></pre>
 <p>Those tasks might seem like complete science fiction, but I list them first because all of the pieces have already been demonstrated by existing researchers. They’ve <a href="https://en.wikipedia.org/wiki/Mycoplasma_laboratorium">synthesized entire genomes</a> on a similar scale to that of <em>Prochlorococcus</em>. They’ve <a href="https://www.nature.com/articles/nature14121">introduced synthetic metabolites</a> to create strains that can’t grow without specific additives. Researchers have even demonstrated that <a href="https://elifesciences.org/articles/34878">recoded organisms can be genetically isolated from horizontal gene transfer</a>, although not yet at the scale needed for this project. Creating a fully codon-swapped genome for <em>Prochlorococcus</em> is a tall order, but it’s not too far beyond the cutting edge of research being done today. It would take time and money to get it done, but it’s well within the realm of possibility<label class="margin-toggle sidenote-number" for="sn-10"></label><input class="margin-toggle" id="sn-10" type="checkbox"/><span class="sidenote">Which is pretty amazing, when you realize that the idea is to create organisms with an <em>entirely new genetic code</em>.</span>.</p>
 <h3 id="build-a-better-rubisco">2. Build a better RuBisCO</h3>
 <p>The second step is a <em>lot</em> more audacious, but we’re closer to having the tools than ever before. The basic goal is to change the beginning of the carbon-fixing pathway from CO<sub>2</sub> to HCO<sub>3</sub><sup>-</sup>, which we know can be bound with high efficiency by carbonic anhydrase. This might sound simple to you<label class="margin-toggle sidenote-number" for="sn-11"></label><input class="margin-toggle" id="sn-11" type="checkbox"/><span class="sidenote">Or impossibly difficult, depending on your background.</span>, but engineering new enzymes has proven to be extremely challenging, even as our ability to engineer new proteins and simulate protein structure has gotten much better. That’s partially because enzymes are dynamic machines that go through conformational changes as they catalyze a reaction—we can design a protein that’s very stable in one conformation, but getting it to cycle between multiple different states is much trickier.</p>
-<p>I’m no expert in this field, but I do know some experts<label class="margin-toggle sidenote-number" for="sn-12"></label><input class="margin-toggle" id="sn-12" type="checkbox"/><span class="sidenote">Largely skewed towards UCSF, because that’s where I did my graduate work.</span>. In my estimation the front-runners in <em>de novo</em> protein design are those working in the <a href="https://www.rosettacommons.org/">Rosetta</a> family<label class="margin-toggle sidenote-number" for="sn-13"></label><input class="margin-toggle" id="sn-13" type="checkbox"/><span class="sidenote">started by <a href="https://www.bakerlab.org/">David Baker</a>, now at the University of Washington.</span>, using machine learning and clever search algorithms to explore protein space<label class="margin-toggle sidenote-number" for="sn-14"></label><input class="margin-toggle" id="sn-14" type="checkbox"/><span class="sidenote"><a href="http://kortemmelab.ucsf.edu/">Tanja Kortemme’s group</a> has done research on stabilizing multiple conformations simultaneously as a way to design new enzymes.</span>. There are many other promising areas of research, though, including new ideas in molecular dynamics<label class="margin-toggle sidenote-number" for="sn-15"></label><input class="margin-toggle" id="sn-15" type="checkbox"/><span class="sidenote">e.g. <a href="http://www.cvri.ucsf.edu/~grabe/research.html">Michael Grabe’s group</a> has done research on efficiently sampling the structures of enzymatic processes using molecular dynamics.</span>. Just recently Google announced the results of their <a href="https://deepmind.com/blog/alphafold/">AlphaFold</a> project, which is using deep learning to predict protein structure from sequence. Their initial results look incredibly promising, although it’s not clear if their approach is useful for designing new proteins.</p>
+<p>I’m no expert in this field, but I do know some experts<label class="margin-toggle sidenote-number" for="sn-12"></label><input class="margin-toggle" id="sn-12" type="checkbox"/><span class="sidenote">Largely skewed towards UCSF, because that’s where I did my graduate work.</span>. In my estimation the front-runners in <em>de novo</em> protein design are those working in the <a href="https://www.rosettacommons.org/">Rosetta</a> family<label class="margin-toggle sidenote-number" for="sn-13"></label><input class="margin-toggle" id="sn-13" type="checkbox"/><span class="sidenote">started by <a href="https://www.bakerlab.org/">David Baker</a>, now at the University of Washington.</span>, using machine learning and clever search algorithms to explore protein space<label class="margin-toggle sidenote-number" for="sn-14"></label><input class="margin-toggle" id="sn-14" type="checkbox"/><span class="sidenote"><a href="http://kortemmelab.ucsf.edu/">Tanja Kortemme’s group</a> has done research on stabilizing multiple conformations simultaneously as a way to design new enzymes.</span>. There are many other promising areas of research, though, including new ideas in molecular dynamics<label class="margin-toggle sidenote-number" for="sn-15"></label><input class="margin-toggle" id="sn-15" type="checkbox"/><span class="sidenote">e.g. <a href="http://www.cvri.ucsf.edu/~grabe/research.html">Michael Grabe’s group</a> has done research on efficiently sampling the structures of enzymatic processes using molecular dynamics.</span>. Just recently Google announced the results of their <a href="https://deepmind.com/blog/alphafold/">AlphaFold</a> project, which is using deep learning to predict protein structure from sequence. Their initial results look incredibly promising, although it’s not clear if their approach is useful for designing new proteins.</p>
 <p>Beyond the computational work, there are also many groups developing high-throughput methods for synthesizing and testing proteins. Almost every computationally-designed protein needs to go through lots of optimization in a real organism before it reaches its full potential, and these methods are going to be at least as important for developing our carbon-fixing machine<label class="margin-toggle sidenote-number" for="sn-16"></label><input class="margin-toggle" id="sn-16" type="checkbox"/><span class="sidenote">I know even less about this topic but I’ll mention <a href="http://www.fordycelab.com/">Polly Fordyce</a> and <a href="http://cochranlab.net/">Jennifer Cochran</a>, both at Stanford, as two investigators doing amazing stuff in this area.</span>.</p>
 <p>It’s hard to guess at how long this step might take, or how much it would take in terms of resources. It might turn out to be unfeasibly complicated, as one new enzyme requires another and another, multiplying the complexity. It might turn out to be entirely impossible, but I don’t think that’s the case. But we’ll never have any idea if we don’t put the resources into finding out. The worst-case risk is that we learn something useful about enzyme design and carbon metabolism, which isn’t too bad all things considered.</p>
 <p>Strictly in terms of money, funding researchers to do this kind of work is fairly cheap—maybe a few billion dollars over a decade. Compared to the cost of cleaning up climate-related disasters, it’s <em>trivial</em><label class="margin-toggle sidenote-number" for="sn-17"></label><input class="margin-toggle" id="sn-17" type="checkbox"/><span class="sidenote">The damage from the <a href="https://en.wikipedia.org/wiki/Camp_Fire_(2018)">most recent California wildfire</a> is estimated at $7.5-10 billion, and that itself is small compared to a bad hurricane or flood.</span>. This is a gamble that may not pay off the way we hope, but we’re getting some very good odds.</p>
@@ -91,7 +91,7 @@ Prochlorococcus      3,000,000,000,000,000,000,000,000,000 (!)</code></pre>
       
   <div class="blog-post">
   
-    <h2><a href="../blog/publishing/">Journals! What Are They Good For?</a></h2>
+    <h2><a href="publishing/">Journals! What Are They Good For?</a></h2>
   
   <p class="meta"><small>2017-10-10</small></p>
   <section><p>Here’s my publishing manifesto, or something like that. Not that I have any of this stuff figured out, of course. But I feel like I need to plant a flag somewhere, so I have something to point at.</p>
@@ -150,7 +150,7 @@ Prochlorococcus      3,000,000,000,000,000,000,000,000,000 (!)</code></pre>
       
   <div class="blog-post">
   
-    <h2><a href="../blog/the-best-card/">Behold: the QR card</a></h2>
+    <h2><a href="the-best-card/">Behold: the QR card</a></h2>
   
   <p class="meta"><small>2017-01-22</small></p>
   <section><p>I’m inordinately pleased with this<label class="margin-toggle sidenote-number" for="sn-0"></label><input class="margin-toggle" id="sn-0" type="checkbox"/><span class="sidenote">That’s me, in case you can’t tell</span>.</p>
@@ -180,7 +180,7 @@ Prochlorococcus      3,000,000,000,000,000,000,000,000,000 (!)</code></pre>
       
   <div class="blog-post">
   
-    <h2><a href="../blog/glasseye-3/">More Glasseye</a></h2>
+    <h2><a href="glasseye-3/">More Glasseye</a></h2>
   
   <p class="meta"><small>2016-12-21</small></p>
   <section><p>Seems like I’m still pretty bad at updating this thing. Partially because I’m sure no one is reading it. Something of a Catch-22 there. So here’s another website-customization post!</p>
@@ -197,7 +197,7 @@ Prochlorococcus      3,000,000,000,000,000,000,000,000,000 (!)</code></pre>
       
   <div class="blog-post">
   
-    <h2><a href="../blog/latex/">I couldn&#39;t tell you why I made this</a></h2>
+    <h2><a href="latex/">I couldn&#39;t tell you why I made this</a></h2>
   
   <p class="meta"><small>2016-06-23</small></p>
   <section><p>Once I thought of it, I had to do it, and this is the least-shameful place to post it. Plus I get to test out the <span class="math inline">\(\LaTeX\)</span> formatting here.</p>
@@ -218,7 +218,7 @@ sW &amp; se &amp; sb &amp; sb &amp; se &amp; sr
       
   <div class="blog-post">
   
-    <h2><a href="../blog/team-science/">Go Team Science! (Or not)</a></h2>
+    <h2><a href="team-science/">Go Team Science! (Or not)</a></h2>
   
   <p class="meta"><small>2016-06-01</small></p>
   <section><p>I don’t seem to have a handle on this blogging thing, yet. I have a long and rambling draft for a post about publishing, which has been languishing for months now. Meanwhile the <a href="www.nigms.nih.gov">NIGMS</a> just released a <a href="https://grants.nih.gov/grants/guide/notice-files/NOT-GM-16-104.html">Request-For-Information</a> on “Team Science”. That seems as good an excuse as any to write something here. They even provided me with a nice outline, and an introduction:</p>
@@ -290,7 +290,7 @@ sW &amp; se &amp; sb &amp; sb &amp; se &amp; sr
       
   <div class="blog-post">
   
-    <h2><a href="../blog/preview/">Coming Soon (maybe)</a></h2>
+    <h2><a href="preview/">Coming Soon (maybe)</a></h2>
   
   <p class="meta"><small>2016-04-13</small></p>
   <section><p>I made this blog because some stuff doesn’t fit in a tweet, so I should probably write something, huh? Here are the main things I want to write, eventually:</p>
@@ -310,7 +310,7 @@ sW &amp; se &amp; sb &amp; sb &amp; se &amp; sr
       
   <div class="blog-post">
   
-    <h2><a href="../blog/glasseye-2/">Glasseye Upgrades</a></h2>
+    <h2><a href="glasseye-2/">Glasseye Upgrades</a></h2>
   
   <p class="meta"><small>2016-04-07</small></p>
   <section><p>I fixed the way that Glasseye handles sidenotes and margin notes, so that they auto-hide (with a pop-up link) when the screen is too narrow to accomodate them. Job well done.</p>
@@ -325,7 +325,7 @@ sW &amp; se &amp; sb &amp; sb &amp; se &amp; sr
       
   <div class="blog-post">
   
-    <h2><a href="../blog/glasseye/">Introducing Glasseye, sort of</a></h2>
+    <h2><a href="glasseye/">Introducing Glasseye, sort of</a></h2>
   
   <p class="meta"><small>2016-04-06</small></p>
   <section><p>I like how this looks but I wanted more functionality—particularly the sidenotes from Tufte CSS.<label class="margin-toggle sidenote-number" for="sn-0"></label><input class="margin-toggle" id="sn-0" type="checkbox"/><span class="sidenote">Look! A sidenote! <br/><br/>And yes, this is still a blog about making a blog. I’ll get to other topics eventually.</span></p>
@@ -342,7 +342,7 @@ sW &amp; se &amp; sb &amp; sb &amp; se &amp; sr
       
   <div class="blog-post">
   
-    <h2><a href="../blog/tufte/">That was easy</a></h2>
+    <h2><a href="tufte/">That was easy</a></h2>
   
   <p class="meta"><small>2016-03-21</small></p>
   <section><h3 id="redecorating">Redecorating</h3>
@@ -368,7 +368,7 @@ sW &amp; se &amp; sb &amp; sb &amp; se &amp; sr
     
     | 1 |
     
-      <a href="../blog/page/2/">Next &raquo;</a>
+      <a href="page/2/">Next &raquo;</a>
     
   </div>
 
